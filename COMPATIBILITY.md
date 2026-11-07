@@ -1,6 +1,6 @@
 # Compatibility matrix
 
-Stable Minecraft Java releases checked against the official Mojang manifest and public Spigot/Paper API metadata on 2026-09-13.
+Stable Minecraft Java releases checked against the official Mojang manifest and public Spigot/Paper API metadata on 2026-11-07.
 
 These rows describe the pinned API build/test coverage. They do not claim all historical server binaries have been tested in-game.
 
@@ -61,6 +61,7 @@ These rows describe the pinned API build/test coverage. They do not claim all hi
 | 26.1.1 | Yes | No published target in this matrix | 25 |
 | 26.1.2 | Yes | Yes | 25 |
 | 26.2 | Yes | Yes | 25 |
+| 26.3 | Yes | Yes | 25 |
 
 ## Gaps and exclusions
 

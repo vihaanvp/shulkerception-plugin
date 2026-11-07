@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.nick</groupId>
   <artifactId>shulkerception</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <name>Shulkerception</name>
   <description>Nested shulker boxes for supported Bukkit and Paper releases from Minecraft 1.11 onward.</description>
   <developers>
@@ -11,12 +11,12 @@
   </developers>
   <properties>
     <plugin.author>nil-commits</plugin.author>
-    <project.build.outputTimestamp>2026-09-13T00:00:00Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-11-07T00:00:00Z</project.build.outputTimestamp>
     <maven.compiler.release>25</maven.compiler.release>
     <maven.compiler.testRelease>25</maven.compiler.testRelease>
-    <minecraft.version>26.2</minecraft.version>
-    <plugin.api.declaration>api-version: '26.2'</plugin.api.declaration>
-    <server.api.version>26.2.build.123-stable</server.api.version>
+    <minecraft.version>26.3</minecraft.version>
+    <plugin.api.declaration>api-version: '26.3'</plugin.api.declaration>
+    <server.api.version>26.3.build.242-stable</server.api.version>
     <server.api.group>io.papermc.paper</server.api.group>
     <server.api.artifact>paper-api</server.api.artifact>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,7 +55,7 @@
         <server.flavor>bukkit</server.flavor>
         <server.api.group>org.spigotmc</server.api.group>
         <server.api.artifact>spigot-api</server.api.artifact>
-        <server.api.version>26.2-R0.1-20260816.205300-12</server.api.version>
+        <server.api.version>26.3-R0.1-20261002.224221-8</server.api.version>
       </properties>
       <repositories>
         <repository><id>spigot</id><url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url></repository>

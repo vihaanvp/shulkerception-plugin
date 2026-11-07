@@ -772,5 +772,23 @@
     "api": "26.2.build.123-stable",
     "java": 25,
     "apiDeclaration": "api-version: '26.2'"
+  },
+  {
+    "minecraft": "26.3",
+    "edition": "bukkit",
+    "group": "org.spigotmc",
+    "artifact": "spigot-api",
+    "api": "26.3-R0.1-20261002.224221-8",
+    "java": 25,
+    "apiDeclaration": "api-version: '26.3'"
+  },
+  {
+    "minecraft": "26.3",
+    "edition": "paper",
+    "group": "io.papermc.paper",
+    "artifact": "paper-api",
+    "api": "26.3.build.242-stable",
+    "java": 25,
+    "apiDeclaration": "api-version: '26.3'"
   }
 ]

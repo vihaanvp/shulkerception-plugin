@@ -1,3 +1,33 @@
+# Shulkerception 1.2.0
+
+Author: **nil-commits**
+Release date: **2026-11-07**
+
+## Minecraft 26.3 support release
+
+- Added Paper 26.3 (build 242-stable) and Spigot 26.3 (build 20261001.204216-1) targets.
+- 88 version-specific builds across 56 stable Minecraft Java releases, from 1.11 through 26.3.
+- 56 Bukkit/Spigot API targets and 32 separately published Paper API targets.
+- Java 25 output for 26.x releases, with Java 8, 16, 17, 21 targets for older server generations.
+- No code changes required — the existing implementation is fully compatible with the 26.3 API.
+- Verified in-game on Paper 26.3: nesting, insertion via click / shift-click / number-key / offhand, and persistence across a server restart.
+
+Choose the artifact matching your exact server version and edition. Install only one Shulkerception JAR and retain your existing config.
+
+## Coverage limits
+
+Minecraft releases before 1.11 have no shulker boxes. The stable Minecraft 1.16 release has no matching public Spigot API in the official index; no 1.16 artifact is represented as verified. Use a supported server release such as 1.16.1 with its own matching artifact.
+
+Some older/intermediate versions have a Bukkit target but no independently published Paper API target. The compatibility table makes this explicit. Snapshots, pre-releases, release candidates, Bedrock, Mojang vanilla servers and Folia are not included.
+
+Each published target must pass API compilation, mocked inventory tests, plugin metadata checks and Java bytecode-level checks. These checks are not a substitute for in-game verification on all historical servers.
+
+## Verification
+
+The **Paper 26.3** build (`shulkerception-1.2.0-mc26.3-paper.jar`) has been verified in-game on a live Paper 26.3 server: nesting, insertion via click / shift-click / number-key / offhand, and persistence across a server restart. All other targets remain compilation- and mock-tested only.
+
+---
+
 # Shulkerception 1.1.0
 
 Author: **nil-commits**

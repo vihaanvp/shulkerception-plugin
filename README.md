@@ -1,15 +1,15 @@
 # Shulkerception
 
-**Version 1.1.0 · Author: nil-commits**
+**Version 1.2.0 · Author: nil-commits**
 
 Licensed under the [MIT License](LICENSE). Copyright (c) 2026 nil-commits.
 
 Put shulker boxes inside placed shulker boxes using ordinary Minecraft Java clients.
-Version-specific Bukkit/Spigot and Paper builds cover **55 stable Minecraft versions from 1.11 through 26.2**, with **86 pinned API build targets**. See [COMPATIBILITY.md](COMPATIBILITY.md) for the exact coverage and exceptions.
+Version-specific Bukkit/Spigot and Paper builds cover **56 stable Minecraft versions from 1.11 through 26.3**, with **88 pinned API build targets**. See [COMPATIBILITY.md](COMPATIBILITY.md) for the exact coverage and exceptions.
 
 ## Verification status
 
-The **Paper 26.2** build (`shulkerception-1.1.0-mc26.2-paper.jar`) has been verified in-game on a live Paper 26.2 server: placing and opening boxes, nesting, insertion by click / shift-click / number-key / offhand, and persistence across a server restart.
+The **Paper 26.3** build (`shulkerception-1.2.0-mc26.3-paper.jar`) has been verified in-game on a live Paper 26.3 server: placing and opening boxes, nesting, insertion by click / shift-click / number-key / offhand, and persistence across a server restart.
 
 All other version-specific targets are covered by compilation, mocked inventory tests, metadata and Java-bytecode checks only. See [COMPATIBILITY.md](COMPATIBILITY.md) for per-version API coverage.
 
@@ -19,9 +19,9 @@ Get the JAR for your exact Minecraft version and server edition from the [GitHub
 
 For example:
 
-- Paper 26.2: `shulkerception-1.1.0-mc26.2-paper.jar`
-- Spigot/CraftBukkit 1.20.4: `shulkerception-1.1.0-mc1.20.4-bukkit.jar`
-- Spigot/CraftBukkit 1.12.2: `shulkerception-1.1.0-mc1.12.2-bukkit.jar`
+- Paper 26.3: `shulkerception-1.2.0-mc26.3-paper.jar`
+- Spigot/CraftBukkit 1.20.4: `shulkerception-1.2.0-mc1.20.4-bukkit.jar`
+- Spigot/CraftBukkit 1.12.2: `shulkerception-1.2.0-mc1.12.2-bukkit.jar`
 
 Stop the server, remove the previous Shulkerception JAR, install **one** matching JAR in `plugins/`, and restart. Keep `plugins/Shulkerception/config.yml` when upgrading. Each artifact has the same plugin name and configuration format. The all-versions ZIP contains the complete selection; do not put all its JARs into a server.
 
@@ -79,14 +79,14 @@ Paper 1.20.5's published API imports an obsolete Adventure snapshot. Its build u
 ./release.ps1 -Offline -Resume
 ```
 
-The default Maven commands still build the current 26.2 editions:
+The default Maven commands still build the current 26.3 editions:
 
 ```text
 mvn -P paper package
 mvn -P bukkit package
 ```
 
-Artifacts are generated under `target/<edition>/<minecraft-version>/` and copied to `dist/v1.1.0/`. The complete package is `dist/shulkerception-1.1.0-all-versions.zip`. SHA256SUMS.txt covers the JARs and documentation. BUILD_REPORT.json records the exact API, test count, bytecode target and checksum for each artifact.
+Artifacts are generated under `target/<edition>/<minecraft-version>/` and copied to `dist/v1.2.0/`. The complete package is `dist/shulkerception-1.2.0-all-versions.zip`. SHA256SUMS.txt covers the JARs and documentation. BUILD_REPORT.json records the exact API, test count, bytecode target and checksum for each artifact.
 
 The release script verifies every JAR's embedded version/author, plugin API declaration and class-file Java level. Tests cover each available shulker color, contents/metadata retention, cursor/hotbar swaps, inventory capacity, limits and cancelled events. **Compilation and mocked API tests do not establish in-game compatibility on every historical server.** The release table records API coverage, not runtime certification. The Paper 26.2 build is additionally verified in-game (see [Verification status](#verification-status)).
 
